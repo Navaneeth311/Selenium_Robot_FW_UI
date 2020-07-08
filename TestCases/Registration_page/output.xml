@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.4 on darwin)" generated="20200704 14:38:20.649" rpa="false">
+<suite id="s1" name="TC 001 Start Close browser" source="/Users/navaneeth/Documents/Robot/TestCases/TC_001_Start_Close_browser.robot">
+<test id="s1-t1" name="TC_001 Open and close browser">
+<status status="FAIL" starttime="20200704 14:38:20.978" endtime="20200704 14:38:20.979" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Robot First Test Case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200704 14:38:20.980" level="INFO">Opening browser 'Chrome' to base url 'https://my.asos.com/identity/register'.</msg>
+<status status="PASS" starttime="20200704 14:38:20.980" endtime="20200704 14:38:29.309"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Email</arg>
+<arg>navaneeth@example.com</arg>
+</arguments>
+<msg timestamp="20200704 14:38:29.310" level="INFO">Typing text 'navaneeth@example.com' into text field 'name:Email'.</msg>
+<status status="PASS" starttime="20200704 14:38:29.309" endtime="20200704 14:38:29.558"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='FirstName']</arg>
+<arg>Navaneeth</arg>
+</arguments>
+<msg timestamp="20200704 14:38:29.558" level="INFO">Typing text 'Navaneeth' into text field 'xpath://input[@id='FirstName']'.</msg>
+<status status="PASS" starttime="20200704 14:38:29.558" endtime="20200704 14:38:29.670"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:LastName</arg>
+<arg>S</arg>
+</arguments>
+<msg timestamp="20200704 14:38:29.671" level="INFO">Typing text 'S' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20200704 14:38:29.671" endtime="20200704 14:38:29.729"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='LastName']</arg>
+</arguments>
+<status status="PASS" starttime="20200704 14:38:29.730" endtime="20200704 14:38:29.747"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='password']</arg>
+<arg>password</arg>
+</arguments>
+<msg timestamp="20200704 14:38:29.747" level="INFO">Typing text 'password' into text field 'xpath://input[@type='password']'.</msg>
+<status status="PASS" starttime="20200704 14:38:29.747" endtime="20200704 14:38:29.857"></status>
+</kw>
+<kw name="Enter DOB">
+<arguments>
+<arg>5</arg>
+<arg>July</arg>
+<arg>2001</arg>
+</arguments>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>name:BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20200704 14:38:29.858" level="INFO">Selecting options from selection list 'name:BirthDay' by index 5.</msg>
+<status status="PASS" starttime="20200704 14:38:29.858" endtime="20200704 14:38:29.948"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>id:BirthMonth</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<msg timestamp="20200704 14:38:29.948" level="INFO">Selecting options from selection list 'id:BirthMonth' by label July.</msg>
+<status status="PASS" starttime="20200704 14:38:29.948" endtime="20200704 14:38:30.029"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20200704 14:38:30.029" level="INFO">Selecting options from selection list 'name:BirthYear' by value 2001.</msg>
+<status status="PASS" starttime="20200704 14:38:30.029" endtime="20200704 14:38:30.092"></status>
+</kw>
+<status status="PASS" starttime="20200704 14:38:29.857" endtime="20200704 14:38:30.092"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='male']</arg>
+</arguments>
+<msg timestamp="20200704 14:38:30.092" level="INFO">Clicking element 'xpath://div[@id='male']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200704 14:38:30.610" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200704 14:38:30.102" endtime="20200704 14:38:30.610"></status>
+</kw>
+<msg timestamp="20200704 14:38:30.619" level="FAIL">Element with locator 'xpath://div[@id='male']' not found.</msg>
+<status status="FAIL" starttime="20200704 14:38:30.092" endtime="20200704 14:38:30.619"></status>
+</kw>
+<status status="FAIL" starttime="20200704 14:38:20.979" endtime="20200704 14:38:30.619" critical="yes">Element with locator 'xpath://div[@id='male']' not found.</status>
+</test>
+<status status="FAIL" starttime="20200704 14:38:20.663" endtime="20200704 14:38:30.621"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="TC 001 Start Close browser">TC 001 Start Close browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

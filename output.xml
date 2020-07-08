@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.4 on darwin)" generated="20200705 12:25:24.509" rpa="false">
+<suite id="s1" name="TestCases" source="/Users/navaneeth/Documents/Robot/TestCases">
+<suite id="s1-s1" name="Login page" source="/Users/navaneeth/Documents/Robot/TestCases/Login_page">
+<suite id="s1-s1-s1" name="Test Login page" source="/Users/navaneeth/Documents/Robot/TestCases/Login_page/Test_Login_page.robot">
+<test id="s1-s1-s1-t1" name="TC_001 Valid Login">
+<status status="FAIL" starttime="20200705 12:25:24.763" endtime="20200705 12:25:24.764" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Robot First Test Case">
+<kw name="Browser_Start_Maximize" library="Reg_Resource" type="setup">
+<doc>This keyword opens the browser and maximize the window</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200705 12:25:24.766" level="INFO">Opening browser 'Chrome' to base url 'https://my.asos.com/identity/register'.</msg>
+<status status="PASS" starttime="20200705 12:25:24.765" endtime="20200705 12:25:40.261"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:25:24.765" endtime="20200705 12:25:40.261"></status>
+</kw>
+<kw name="Page_title" library="Reg_Resource">
+<assign>
+<var>${Res}</var>
+</assign>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200705 12:25:40.269" level="INFO">${title} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:40.263" endtime="20200705 12:25:40.270"></status>
+</kw>
+<msg timestamp="20200705 12:25:40.270" level="INFO">${Res} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:40.262" endtime="20200705 12:25:40.270"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Res}</arg>
+</arguments>
+<msg timestamp="20200705 12:25:40.271" level="INFO">ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:40.271" endtime="20200705 12:25:40.272"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id:sign-in</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200705 12:25:41.305" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200705 12:25:40.309" endtime="20200705 12:25:41.305"></status>
+</kw>
+<msg timestamp="20200705 12:25:40.273" level="INFO">Clicking button 'id:sign-in'.</msg>
+<msg timestamp="20200705 12:25:41.313" level="FAIL">Button with locator 'id:sign-in' not found.</msg>
+<status status="FAIL" starttime="20200705 12:25:40.272" endtime="20200705 12:25:41.314"></status>
+</kw>
+<kw name="Get_Title_Close_Browser" library="Reg_Resource" type="teardown">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200705 12:25:41.318" level="INFO">${title} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:41.315" endtime="20200705 12:25:41.318"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg timestamp="20200705 12:25:41.319" level="INFO">ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:41.318" endtime="20200705 12:25:41.319"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200705 12:25:41.319" endtime="20200705 12:25:41.463"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:25:41.315" endtime="20200705 12:25:41.463"></status>
+</kw>
+<doc>This is a sample test caases for registraation page</doc>
+<timeout value="1 minute 2 seconds"></timeout>
+<status status="FAIL" starttime="20200705 12:25:24.764" endtime="20200705 12:25:41.463" critical="yes">Button with locator 'id:sign-in' not found.</status>
+</test>
+<status status="FAIL" starttime="20200705 12:25:24.539" endtime="20200705 12:25:41.465"></status>
+</suite>
+<status status="FAIL" starttime="20200705 12:25:24.538" endtime="20200705 12:25:41.467"></status>
+</suite>
+<suite id="s1-s2" name="Registration page" source="/Users/navaneeth/Documents/Robot/TestCases/Registration_page">
+<suite id="s1-s2-s1" name="Test Registration page" source="/Users/navaneeth/Documents/Robot/TestCases/Registration_page/Test_Registration_page.robot">
+<kw name="Before Each Test Suite" library="Reg_Resource" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Before Each Test Suite</arg>
+</arguments>
+<msg timestamp="20200705 12:25:41.477" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20200705 12:25:41.477" endtime="20200705 12:25:41.478"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:25:41.476" endtime="20200705 12:25:41.478"></status>
+</kw>
+<test id="s1-s2-s1-t1" name="TC_001 Valid Registration">
+<kw name="Browser_Start_Maximize" library="Reg_Resource" type="setup">
+<doc>This keyword opens the browser and maximize the window</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200705 12:25:41.480" level="INFO">Opening browser 'Chrome' to base url 'https://my.asos.com/identity/register'.</msg>
+<status status="PASS" starttime="20200705 12:25:41.479" endtime="20200705 12:25:48.479"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:25:41.479" endtime="20200705 12:25:48.480"></status>
+</kw>
+<kw name="Page_title" library="Reg_Resource">
+<assign>
+<var>${Res}</var>
+</assign>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200705 12:25:48.513" level="INFO">${title} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:48.481" endtime="20200705 12:25:48.513"></status>
+</kw>
+<msg timestamp="20200705 12:25:48.513" level="INFO">${Res} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:48.480" endtime="20200705 12:25:48.513"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Res}</arg>
+</arguments>
+<msg timestamp="20200705 12:25:48.514" level="INFO">ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:25:48.513" endtime="20200705 12:25:48.514"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1seconds</arg>
+</arguments>
+<status status="PASS" starttime="20200705 12:25:48.514" endtime="20200705 12:25:48.515"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Email</arg>
+<arg>navaneeth@example.com</arg>
+</arguments>
+<msg timestamp="20200705 12:25:48.515" level="INFO">Typing text 'navaneeth@example.com' into text field 'name:Email'.</msg>
+<status status="PASS" starttime="20200705 12:25:48.515" endtime="20200705 12:25:51.765"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='FirstName']</arg>
+<arg>Navaneeth</arg>
+</arguments>
+<msg timestamp="20200705 12:25:51.766" level="INFO">Typing text 'Navaneeth' into text field 'xpath://input[@id='FirstName']'.</msg>
+<status status="PASS" starttime="20200705 12:25:51.766" endtime="20200705 12:25:54.926"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:LastName</arg>
+<arg>S</arg>
+</arguments>
+<msg timestamp="20200705 12:25:54.927" level="INFO">Typing text 'S' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20200705 12:25:54.926" endtime="20200705 12:25:57.994"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='LastName']</arg>
+</arguments>
+<status status="PASS" starttime="20200705 12:25:57.994" endtime="20200705 12:26:00.027"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='password']</arg>
+<arg>password</arg>
+</arguments>
+<msg timestamp="20200705 12:26:00.030" level="INFO">Typing text 'password' into text field 'xpath://input[@type='password']'.</msg>
+<status status="PASS" starttime="20200705 12:26:00.028" endtime="20200705 12:26:03.161"></status>
+</kw>
+<kw name="Enter DOB">
+<arguments>
+<arg>5</arg>
+<arg>July</arg>
+<arg>2001</arg>
+</arguments>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>name:BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20200705 12:26:03.166" level="INFO">Selecting options from selection list 'name:BirthDay' by index 5.</msg>
+<status status="PASS" starttime="20200705 12:26:03.164" endtime="20200705 12:26:16.325"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>id:BirthMonth</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<msg timestamp="20200705 12:26:16.326" level="INFO">Selecting options from selection list 'id:BirthMonth' by label July.</msg>
+<status status="PASS" starttime="20200705 12:26:16.325" endtime="20200705 12:26:23.416"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20200705 12:26:23.417" level="INFO">Selecting options from selection list 'name:BirthYear' by value 2001.</msg>
+<status status="PASS" starttime="20200705 12:26:23.416" endtime="20200705 12:26:30.505"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:26:03.162" endtime="20200705 12:26:30.506"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='male']</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200705 12:26:32.996" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200705 12:26:31.520" endtime="20200705 12:26:32.997"></status>
+</kw>
+<msg timestamp="20200705 12:26:30.506" level="INFO">Clicking element 'xpath://div[@id='male']'.</msg>
+<msg timestamp="20200705 12:26:32.997" level="FAIL">Element with locator 'xpath://div[@id='male']' not found.</msg>
+<status status="FAIL" starttime="20200705 12:26:30.506" endtime="20200705 12:26:32.998"></status>
+</kw>
+<kw name="Get_Title_Close_Browser" library="Reg_Resource" type="teardown">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200705 12:26:34.004" level="INFO">${title} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:26:32.999" endtime="20200705 12:26:34.004"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg timestamp="20200705 12:26:34.005" level="INFO">ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:26:34.004" endtime="20200705 12:26:34.005"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200705 12:26:34.005" endtime="20200705 12:26:35.081"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:26:32.998" endtime="20200705 12:26:35.081"></status>
+</kw>
+<doc>This is a sample test caases for registraation page</doc>
+<timeout value="1 minute 2 seconds"></timeout>
+<status status="FAIL" starttime="20200705 12:25:41.478" endtime="20200705 12:26:35.081" critical="yes">Element with locator 'xpath://div[@id='male']' not found.</status>
+</test>
+<test id="s1-s2-s1-t2" name="TC_002 Check link navigaation">
+<kw name="Browser_Start_Maximize" library="Reg_Resource" type="setup">
+<doc>This keyword opens the browser and maximize the window</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200705 12:26:35.085" level="INFO">Opening browser 'Chrome' to base url 'https://my.asos.com/identity/register'.</msg>
+<status status="PASS" starttime="20200705 12:26:35.085" endtime="20200705 12:26:44.953"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:26:35.084" endtime="20200705 12:26:44.953"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Tell me more about these...']</arg>
+</arguments>
+<msg timestamp="20200705 12:26:44.954" level="INFO">Clicking link 'xpath://a[text()='Tell me more about these...']'.</msg>
+<status status="PASS" starttime="20200705 12:26:44.954" endtime="20200705 12:26:48.107"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@aria-label='close']</arg>
+</arguments>
+<msg timestamp="20200705 12:26:48.108" level="INFO">Clicking element 'xpath://a[@aria-label='close']'.</msg>
+<status status="PASS" starttime="20200705 12:26:48.107" endtime="20200705 12:26:50.177"></status>
+</kw>
+<kw name="Get_Title_Close_Browser" library="Reg_Resource" type="teardown">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200705 12:26:51.185" level="INFO">${title} = ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:26:50.179" endtime="20200705 12:26:51.185"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg timestamp="20200705 12:26:51.186" level="INFO">ASOS | Join ASOS</msg>
+<status status="PASS" starttime="20200705 12:26:51.185" endtime="20200705 12:26:51.186"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200705 12:26:51.186" endtime="20200705 12:26:52.307"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:26:50.178" endtime="20200705 12:26:52.307"></status>
+</kw>
+<doc>To check the link navigation works properly</doc>
+<status status="PASS" starttime="20200705 12:26:35.082" endtime="20200705 12:26:52.308" critical="yes"></status>
+</test>
+<kw name="After Each Test Suite" library="Reg_Resource" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>After Each Test Suite</arg>
+</arguments>
+<msg timestamp="20200705 12:26:52.309" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20200705 12:26:52.309" endtime="20200705 12:26:52.310"></status>
+</kw>
+<status status="PASS" starttime="20200705 12:26:52.309" endtime="20200705 12:26:52.310"></status>
+</kw>
+<status status="FAIL" starttime="20200705 12:25:41.471" endtime="20200705 12:26:52.310"></status>
+</suite>
+<status status="FAIL" starttime="20200705 12:25:41.468" endtime="20200705 12:26:52.312"></status>
+</suite>
+<status status="FAIL" starttime="20200705 12:25:24.512" endtime="20200705 12:26:52.314"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3">Critical Tests</stat>
+<stat pass="1" fail="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="2" id="s1-s1" name="Login page">TestCases.Login page</stat>
+<stat pass="0" fail="2" id="s1-s1-s1" name="Test Login page">TestCases.Login page.Test Login page</stat>
+<stat pass="1" fail="1" id="s1-s2" name="Registration page">TestCases.Registration page</stat>
+<stat pass="1" fail="1" id="s1-s2-s1" name="Test Registration page">TestCases.Registration page.Test Registration page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

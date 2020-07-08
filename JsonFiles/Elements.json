@@ -1,0 +1,18 @@
+{
+  "Registration":
+  {
+    "email_textbox_name": "Email",
+    "firstname_textbox_xpath": "//input[@id='FirstName']",
+    "lastname_textbox_id": "LastName",
+    "password_xpath": "//input[@type='password']",
+    "checkbox_male":  "//div[@id='male']",
+    "new_arrivals_id": "newnessLabel",
+    "register_btn_id": "register"
+  },
+
+  "Login":
+  {
+    "username_name": "Username",
+    "password_id": "Password"
+  }
+}
