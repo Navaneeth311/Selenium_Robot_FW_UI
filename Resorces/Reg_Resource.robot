@@ -34,7 +34,7 @@ After Each Test Suite
 
 Create Folder at RunTime
     [Arguments]  ${Folder}  ${Subfolder}
-    create folder  ${Folder}
+    create_folder  ${Folder}
     create_subfolder  ${Subfolder}
     Log  "Task done successfully"
 
